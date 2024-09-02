@@ -1,0 +1,200 @@
+body{
+    .banner{
+        .start{
+            margin-left: 61px;
+        }
+        .banner-sm{
+            h1{font-size: 28px;}
+            
+        }
+    }
+    .popular-theme{
+        .theme-card{
+            background-image: url(../images/theme-1.png);
+        }
+        .card-shape{
+            max-height: 200px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            img{
+                border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            }
+        }
+        .card-shape::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: gray;
+            opacity:0 ;
+            transition: opacity 0.5s;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+          }
+          .card-shape:hover::after {
+            opacity: 0.4;
+            cursor: pointer;
+          }
+          
+    }
+    .featured-article{
+        .swiper-pagination{
+            position: initial;
+            width:232px;
+        }
+        .swiper-pagination::after {
+            content: "";
+            width: 80px;
+            height: 1px;
+            background-color: #6c757d;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          .swiper-prev:hover {
+            background-color: #6c757d;
+            color: #ffffff;
+          }
+          .swiper-button-disabled {
+            color: #dee2e6;
+            border-color: #dee2e6 !important;
+          }
+          .swiper-button-disabled:hover {
+            cursor: default;
+            background-color: initial !important;
+          }
+          .swiper-next:hover {
+            background-color: #6c757d;
+            color: #DEE2E6;
+          }
+          
+    }
+    .discount{
+        .discount-doll{ 
+            &::before{
+                position: absolute;
+                content: "";
+                width: 217px;
+                height: 73px;
+                left: 0;
+                bottom: -80px;
+                background: url(/assets/images/bg-1.png);
+                @media (max-width:991px) {
+                    display: none;
+                }
+            }
+            
+            &::after{
+                position: absolute;
+                content: "";
+                width: 300px;
+                height: 188px;
+                right: 0px;
+                bottom:-80px;
+                background: url(/assets/images/bg-2.png);
+                @media (max-width:991px) {
+                    background: url(/assets/images/bg-2-sm.png);
+                    width: 112px;
+                    height: 100px;
+                    bottom: -48px;
+                }
+                
+            }
+            
+        }
+    }
+    .sense-life{
+        .swiper-pagination{
+            position: initial;
+            width:232px;
+        }
+        .swiper-pagination::after {
+            content: "";
+            width: 80px;
+            height: 1px;
+            background-color: #6c757d;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          .lifeswiper-prev:hover {
+            background-color: #6c757d;
+            color: #ffffff;
+          }
+          .swiper-button-disabled {
+            color: #dee2e6;
+            border-color: #dee2e6 !important;
+          }
+          .swiper-button-disabled:hover {
+            cursor: default;
+            background-color: initial !important;
+          }
+          .lifeswiper-next:hover {
+            background-color: #6c757d;
+            color: #DEE2E6;
+          }
+          
+    }
+    .recommend{
+      picture::before{ 
+        position: absolute;
+        content: "";
+        bottom: 0;
+        width: 100%;
+        height: 20%;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0),
+          rgb(60, 59, 57)
+        );
+      }
+      .stick-label{
+        left: 16px;
+      }
+      
+      .rcswiper{
+        height: 252px;
+      }
+      .swiper-slide{
+        a{
+          left: 16px;
+          top: 0;
+        }
+      }
+      .artical-question{
+        bottom: 16px;
+        left: 12px;
+      }
+      .artical-question-arrow{
+        right: 12px;
+        bottom: 16px;
+      }
+
+      .recommendCard::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: gray;
+        opacity:0 ;
+        transition: opacity 0.5s;
+
+      }
+      .recommendCard:hover::after {
+        opacity: 0.4;
+        cursor: pointer;
+      }
+      .swiper {
+        max-width: 306px;
+        
+      }
+    }
+    
+}

@@ -1,0 +1,26 @@
+.lg-collapsed{
+    max-width: 276px;
+    
+  }
+
+a{
+    text-wrap: nowrap;
+}
+
+  .collapsed .open {
+    display: inline-block ;
+  }
+  .open {
+    display: none ;
+  }
+  .collapsed .close {
+    display:none ;
+  }
+  .close {
+    display: inline-block ;
+  }
+
+  .input-group:focus-within .text-neutral-300 {
+    color: #212529 !important;
+    font-weight: bold !important;
+  }
